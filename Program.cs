@@ -6,7 +6,7 @@ namespace Incidental_Inheritance
     {
         private static void Main()
         {
-            var intList = new IntSet(); // polymorphism
+            var intList = new IntSet(new IntList());
             intList.Insert(5);
             intList.Insert(5);
             Debug.Assert(intList.Count() == 1); // Should be two if intList "is a" IntList

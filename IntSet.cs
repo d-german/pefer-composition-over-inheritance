@@ -10,7 +10,12 @@
     /// </summary>
     public class IntSet
     {
-        private readonly IntList _list = new IntList();
+        private readonly IntList _list;
+
+        public IntSet(IntList list)
+        {
+            _list = list;
+        }
 
         public int Head()
         {
